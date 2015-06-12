@@ -30,7 +30,6 @@
             android:paddingTop="@dimen/activity_top_margin"
             android:paddingBottom="@dimen/activity_bottom_margin"
             android:orientation="vertical"
-            android:layout_marginBottom="10dp"
             >
 
             <Button
@@ -38,40 +37,40 @@
                 android:layout_height="wrap_content"
                 android:text="@string/spotify_streamer"
                 android:id="@+id/button_spotify"
-                android:onClick="openSpotifyStreamer"
+                android:onClick="clickOnBtn"
                 android:background="@drawable/custom_button"
                 android:textColor="@drawable/button_color"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/buttons_margin_bottom"
                 />
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/library_app"
                 android:id="@+id/button_library"
-                android:onClick="openLibraryApp"
+                android:onClick="clickOnBtn"
                 android:background="@drawable/custom_button"
                 android:textColor="@drawable/button_color"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/buttons_margin_bottom"
                 />
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/scores_app"
                 android:id="@+id/button_scores"
-                android:onClick="openScoresApp"
+                android:onClick="clickOnBtn"
                 android:background="@drawable/custom_button"
                 android:textColor="@drawable/button_color"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/buttons_margin_bottom"
                 />
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/build_it_bigger"
                 android:id="@+id/button_bigger"
-                android:onClick="openBuildItBiggerApp"
+                android:onClick="clickOnBtn"
                 android:background="@drawable/custom_button"
                 android:textColor="@drawable/button_color"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/buttons_margin_bottom"
                 />
             .
             <Button
@@ -79,17 +78,17 @@
                 android:layout_height="wrap_content"
                 android:text="@string/xyz_reader"
                 android:id="@+id/button_xyz"
-                android:onClick="openXYZReader"
+                android:onClick="clickOnBtn"
                 android:background="@drawable/custom_button"
                 android:textColor="@drawable/button_color"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/buttons_margin_bottom"
                 />
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/capstone_my_own_app"
                 android:id="@+id/button_capstone"
-                android:onClick="openCapstoneMyOwnApp"
+                android:onClick="clickOnBtn"
                 android:background="@drawable/custom_button"
                 android:textColor="@drawable/button_color"
                 />

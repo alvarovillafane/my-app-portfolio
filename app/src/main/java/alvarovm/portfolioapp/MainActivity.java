@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 
@@ -38,42 +39,15 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void openSpotifyStreamer(View view){
+    public void toastText(String s){
 
-        Toast.makeText(getApplicationContext(), "This button will launch Spotify Streamer app", Toast.LENGTH_LONG).show();
-
+        Toast.makeText(this, s, Toast.LENGTH_LONG).show();
     }
 
-    public void openLibraryApp(View view){
-
-        Toast.makeText(getApplicationContext(), "This button will launch Library App", Toast.LENGTH_LONG).show();
-
+    public void clickOnBtn(View view){
+        Button btn = (Button) view;
+        toastText( getResources().getString(R.string.launch_message) + " " + btn.getText().toString() );
     }
-
-    public void openScoresApp(View view){
-
-        Toast.makeText(getApplicationContext(), "This button will launch Scores app", Toast.LENGTH_LONG).show();
-
-    }
-
-    public void openBuildItBiggerApp(View view){
-
-        Toast.makeText(getApplicationContext(), "This button will launch Build It Bigger app", Toast.LENGTH_LONG).show();
-
-    }
-
-    public void openXYZReader(View view){
-
-        Toast.makeText(getApplicationContext(), "This button will launch XYZ Reader app", Toast.LENGTH_LONG).show();
-
-    }
-
-    public void openCapstoneMyOwnApp(View view){
-
-        Toast.makeText(getApplicationContext(), "This button will launch my Capstone app", Toast.LENGTH_LONG).show();
-
-    }
-
 
 
 
